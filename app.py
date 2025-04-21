@@ -1,7 +1,8 @@
-from flask import Flask, render_template, request, redirect, session, url_for
-import sqlite3
-from openpyxl import Workbook
 import os
+from flask import Flask, session
+
+app = Flask(__name__)
+app.secret_key = os.environ.get('FLASK_SECRET_KEY', 'fallbacksecret')
 
 
 
