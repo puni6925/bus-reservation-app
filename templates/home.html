@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bus Reservation Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <span class="navbar-brand">🚌 Bus Reservation System</span>
+    <a href="/logout" class="btn btn-outline-light ms-auto">Logout</a>
+  </div>
+</nav>
+
+<div class="container mt-5 text-center">
+    <h2 class="text-success mb-4">Welcome {{ session.username }}!</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="list-group">
+                <a href="/buses" class="list-group-item list-group-item-action">🚌 View All Buses</a>
+                <a href="/book" class="list-group-item list-group-item-action">📝 Book a Bus</a>
+                <a href="/search" class="list-group-item list-group-item-action">🔍 Search Buses</a>
+                <a href="/user/dashboard" class="list-group-item list-group-item-action">📋 My Bookings</a>
+                <a href="/user/profile" class="list-group-item list-group-item-action">👤 My Profile</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+
