@@ -1,10 +1,9 @@
+from flask import Flask, render_template, request, redirect, session
 import os
-from flask import Flask, session
+import sqlite3
 
 app = Flask(__name__)
-app.secret_key = os.environ.get('FLASK_SECRET_KEY', 'fallbacksecret')
-
-
+app.secret_key = os.environ.get('FLASK_SECRET_KEY', 'fallbacksecretkey')
 
 app = Flask(__name__)
 
